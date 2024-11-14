@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize your text!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+
+        <div class="text-customization">
+            <h1>Customize your text!</h1>
+            <textarea name="area" class="area" id="area" placeholder="Enter your text" rows="20" cols="45"></textarea>
+            <div class="buttons">
+
+                    <div class="group0">
+                        <button id="turn-up">Upside down</button>
+                        <button id="reset-turn">Upright</button> 
+                    </div>
+
+                    <div class="group2">
+                    <button id="bold">Bold</button>
+                    <button id="italic">Italic</button>
+                    <button id="nostyle">No style</button>
+                    </div>
+
+                    <div class="group1">
+                        <button id="underline">Underline</button>
+                        <button id="overline">Overline</button>
+                        <button id="strike">Line-through</button>
+                        <button id="no-line">No line</button>
+                    </div>
+
+                    <div class="group4">
+                        <button id="left" name="left">Horizontally Left</button>
+                        <button id="center">Horizontally Center</button>
+                        <button id="right">Horizontally Right</button>
+                    </div>
+
+                    <div class="group5">
+                        <button id="top-v">Vertically Top</button>
+                        <button id="center-v">Vertically Center</button>
+
+                    </div>
+
+                    <div class="group3">
+                    <button id="capitalize">Capitalize</button>
+                    <button id="decapitalize">Decapitalize</button>
+                    </div>
+
+
+
+
+                    <br>
+                    <button id="font+1">font size +1</button>
+                    <button id="font-1">font size -1</button>
+                    <label for="fonts">Change the font:</label>
+                    <select name="fonts" id="fonts" onchange="changeFont(this);">
+                        <option value="" selected>Noto Sans Mono</option>
+                        <option value="Times new roman">Times new roman</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Newsreader">Newsreader</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <input type="color" name="color" id="color">
+                    <br>
+                    <label for="spacing">Letter spacing(px):</label>
+                    <input type="number" name="letter-spacing" id="spacing" value="0">
+            </div>
+            
+        </div>
+
+
+</div>
+
+<footer>laitdsgn © 2024</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
